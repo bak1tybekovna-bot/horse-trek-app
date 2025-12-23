@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horse Trek — Горные туры Каракол</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>🐎 Horse Trek — Горные туры Каракол</header>
+
+<div class="hero">
+  <img src="https://a3copydesign.com/upload/iblock/a4f/xhorses_2880x1800_sunset_cgi_hd_10574.jpg.pagespeed.ic.cN1IsPXpwZ.jpg" alt="Horses running in a mountainous landscape during sunset with dramatic clouds and warm lighting" />
+  <div class="hero-text">Туры на лошадях</div>
+</div>
+
+<div class="section">
+  <h2>Наши локации</h2>
+  <div class="photo-gallery">
+    <img src="https://i09.fotocdn.net/s114/2859bce23ff8721b/public_pin_l/2581057681.jpg" alt="White horse grazing in a mountain valley with turquoise river, surrounded by dense forest and snow-capped peaks under clear blue sky, serene and majestic landscape" />
+    <img src="https://static.tildacdn.com/tild3237-3363-4233-a538-353435323663/3765689.jpg" alt="Mountain landscape of Karakol featuring lush green valleys with evergreen forests, rugged peaks with patches of snow, and misty clouds hovering between the mountains, conveying a serene and majestic natural wilderness" />
+    <img src="https://s16.stc.yc.kpcdn.net/share/i/12/14676189/wr-960.webp" alt="Herd of brown and chestnut horses galloping together across a lush green meadow with dense green forest and trees in the background, conveying freedom, energy, and natural beauty of mountain terrain">
+    <img src="https://ecfs.msu.ru/phpthumbsup/w/1500/aoe/0/far/0/src/images/news%202024/july%202024/zakon-rk-o-soxranenii-i-vosproizvodstve-otechestvennyix-porod-loshadej.jpg" alt="A group of horses grazing peacefully in a lush green meadow, surrounded by vibrant wildflowers and under a clear blue sky. The scene conveys a sense of tranquility and harmony with nature, highlighting the beauty of domestic horse breeds.">
+    <img src="https://avatars.mds.yandex.net/i?id=813496dee0d9f4aceb5cb3aaacb3346e_l-8341266-images-thumbs&ref=rim&n=13&w=2048&h=1364" alt="A serene landscape featuring a white horse standing gracefully in a lush green meadow, surrounded by vibrant wildflowers and under a clear blue sky. The scene conveys a sense of tranquility and harmony with nature, highlighting the beauty of the horse in its natural environment." />
+    <img src="https://avatars.mds.yandex.net/i?id=6c16a4098bc8299bab6d6a89b128a349_l-5320304-images-thumbs&ref=rim&n=13&w=2300&h=1242" alt="A group of horses standing together in a lush green meadow, surrounded by vibrant wildflowers under a clear blue sky. The horses appear calm and content, conveying a sense of peace and harmony with nature." />
+    <img src="https://gdb.currenttime.tv/8f8cc162-0d0d-47bd-b2f9-70d0ab12774c_cx0_cy5_cw0_w1200_h630.jpg" alt="Scenic ski resort landscape with orange ski lifts suspended across snowy mountain slopes, evergreen forests below, and distant peaks with snow coverage under clear blue sky. Vast valley floor visible in the background with a serene, majestic alpine environment.">
+    <img src="https://avatars.dzeninfra.ru/get-zen_doc/1936066/pub_63108dba2ba41e50c6acc4e1_631091623924972f23757479/scale_1200" alt="">
+  </div>
+
+  <div class="map">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26679.98431568523!2d78.994!3d42.493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389f3b7d03a5c98b%3A0x5e0110f7cba3da4!2z0JrQvtGA0LjQvdGB0LrQsNGPINGD0LsuIEthcmFrb2w!5e0!3m2!1sru!2skg!4v0000000000" 
+      allowfullscreen="" 
+      loading="lazy" 
+      title="Карта Каракола">
+    </iframe>
+  </div>
+</div>
+
+<div class="section">
+  <button class="booking-btn" onclick="openModal()">Забронировать</button>
+  <a class="call-btn" href="tel:+996503260307">📞 Позвонить</a>
+</div>
+
+<!-- Модальное окно брони -->
+<div class="modal" id="bookingModal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Бронирование тура</h2>
+    <form id="bookingForm">
+      <input type="text" id="name" placeholder="Ваше имя" required>
+      <input type="tel" id="phone" placeholder="Телефон" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="date" id="date" required>
+      <button type="submit">Отправить заявку</button>
+    </form>
+    <p id="result"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
